@@ -1523,6 +1523,7 @@ h6 {
           border-radius: 0;
   text-transform: uppercase;
   padding: 14.5px 0;
+  z-index: 11000;
 }
 .mv-btn.mv-btn-style-1 .btn-inner {
   display: block;
@@ -5692,6 +5693,8 @@ select option.option-please-select {
 @media screen and (max-width: 767px) {
   .mv-caption-style-1 .container {
     width: 100%;
+    z-index: 10999;
+
   }
 }
 .mv-caption-style-1 .caption-1-text-1 {
