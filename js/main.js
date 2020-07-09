@@ -173,7 +173,7 @@ $(document).ready(function() {
 
     $('body').append($('<div />').addClass('click-close-off-canvas off-canvas-overlay'));
 
-    $('.click-btn-off-canvas-left').on('dbclick').on('click', function() {
+    $('.click-btn-off-canvas-left').off('dbclick').on('click', function() {
       $('body').removeClass('has-off-canvas-right');
       
       var scrollTop = $(document.body).scrollTop();
@@ -204,7 +204,7 @@ $(document).ready(function() {
       }
     });
 
-    $('.click-btn-off-canvas-right').on('dbclick').on('click', function() {
+    $('.click-btn-off-canvas-right').off('dbclick').on('click', function() {
       $('body').removeClass('has-off-canvas-left');
       
       var scrollTop = $(document.body).scrollTop();
@@ -235,7 +235,7 @@ $(document).ready(function() {
       }
     });
 
-    $('.click-close-off-canvas').on('dbclick').on('click', closeOffCanvas);
+    $('.click-close-off-canvas').off('dbclick').on('click', closeOffCanvas);
   })(jQuery);
 
 
@@ -1787,7 +1787,7 @@ $(document).ready(function() {
   (function($) {
     if (!$('.btn-add-to-cart').length) return;
 
-    $(document.body).on('dbclick').on('click', '.btn-add-to-cart', function() {
+    $(document.body).off('dbclick').on('click', '.btn-add-to-cart', function() {
       var post = $(this).closest('.post');
       var messageAction = post.find('.content-message .message-inner');
       var htmlString =  '<i class="fa fa-check mv-color-primary"></i> 1 item added to cart. <a href="cart.html"><strong>View cart</strong></a>';
@@ -1809,7 +1809,7 @@ $(document).ready(function() {
   (function($) {
     if (!$('.btn-add-to-wishlist').length) return;
 
-    $(document.body).on('dbclick').on('click', '.btn-add-to-wishlist', function() {
+    $(document.body).off('dbclick').on('click', '.btn-add-to-wishlist', function() {
       var post = $(this).closest('.post');
       var messageAction = post.find('.content-message .message-inner');
       var htmlString =  '<i class="fa fa-check mv-color-primary"></i> 1 item added to wishlist. <a href="wishlist.html"><strong>View wishlist</strong></a>';
@@ -1882,7 +1882,7 @@ $(document).ready(function() {
       });
     });
 
-    $('.btn-choose-method').on('dbclick').on('click', function() {
+    $('.btn-choose-method').off('dbclick').on('click', function() {
       var thisItem = $(this).closest('.item');
 
       $(this).closest('.method-payment-list').find('.item').removeClass('active');
