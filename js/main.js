@@ -161,11 +161,10 @@ $(document).ready(function() {
       }, 200);
     }
 
-   $('.header .main-nav').clone().prependTo('.off-canvas-left .off-canvas-body');
+    // $('.header .main-nav').clone().prependTo('.off-canvas-left .off-canvas-body');
 
-    $('.off-canvas-left .main-nav .sf-menu').removeClass('sf-js-enabled');
-    $('.off-canvas-left .main-nav .sf-menu').addClass('expand-all').removeClass('sf-js-enabled'); 
-    re-enable superfish menu !important
+    // $('.off-canvas-left .main-nav .sf-menu').removeClass('sf-js-enabled');
+    // $('.off-canvas-left .main-nav .sf-menu').addClass('expand-all').removeClass('sf-js-enabled'); // re-enable superfish menu !important
 
     $('.off-canvas-left .main-nav .sf-menu').superfish({
       cssArrows: false

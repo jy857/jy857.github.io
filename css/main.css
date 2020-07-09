@@ -1523,19 +1523,17 @@ h6 {
           border-radius: 0;
   text-transform: uppercase;
   padding: 14.5px 0;
-  position: relative;
 }
 .mv-btn.mv-btn-style-1 .btn-inner {
   display: block;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   height: 100%;
   width: 100%;
   padding: 0;
 }
 .mv-btn.mv-btn-style-1 .btn-icon {
-  position: relative;
-
+  position: absolute;
   top: 50%;
   left: 0;
   bottom: auto;
